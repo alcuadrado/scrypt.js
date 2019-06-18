@@ -1,11 +1,8 @@
 # scrypt.js
 
-This purpose of this library is to provide a single interface to both a C and a pure Javascript based scrypt implementation.
-Supports browserify and will select the best option when running under Node or in the browser.
+This purpose of this library was to provide a single interface to both a C and a pure Javascript based scrypt implementation, support browserify and select the best option when running under Node or in the browser.
 
-It is using the following two underlying implementations:
-- [scryptsy](https://github.com/cryptocoinjs/scryptsy) for the pure Javascript implementation
-- [scrypt](https://www.npmjs.com/package/scrypt) for the C version
+This library is not maintained anymore, and it's just a wrapper around [scryptsy](https://github.com/cryptocoinjs/scryptsy) for backwards compatibility.
 
 It only supports hashing. Doesn't offer an async option and doesn't implement the HMAC format. If you are looking for those,
 please use the Node `scrypt` library.
@@ -25,10 +22,6 @@ There is only one method returned for hashing using scrypt. All parameters are m
 ```js
 // Load default implementation
 var scrypt = require('scrypt.js')
-
-// Load specific version
-var scrypt = require('scrypt.js/js') // pure Javascript
-var scrypt = require('scrypt.js/node') // C on Node
 
 scrypt(key, salt, n, r, p, dklen, progressCb) // returns Buffer
 ```

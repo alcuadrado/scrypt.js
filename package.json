@@ -1,6 +1,6 @@
 {
   "name": "scrypt.js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Scrypt in Node.js and in the browser. Fast & simple.",
   "main": "index.js",
   "scripts": {
@@ -21,9 +21,6 @@
   "license": "MIT",
   "dependencies": {
     "scryptsy": "^1.2.1"
-  },
-  "optionalDependencies": {
-    "scrypt": "^6.0.2"
   },
   "browser": "js.js",
   "devDependencies": {
