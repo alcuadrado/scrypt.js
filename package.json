@@ -2,7 +2,7 @@
   "name": "scrypt.js",
   "version": "0.3.0",
   "description": "Scrypt in Node.js and in the browser. Fast & simple.",
-  "main": "index.js",
+  "main": "node.js",
   "scripts": {
     "lint": "standard",
     "test": "tape ./test/index.js"
